@@ -44,6 +44,7 @@
  body{
      -Webkit-font-smoothing:antialiased;
      height: 400px;
+     font-family: "Raleway-regular";
  }
  .container{
      width: 100%;
@@ -172,9 +173,12 @@
     background-image: url(../icons/shadow-sm.svg);
     position: absolute;
     bottom: -20px;
+    left: 49.8%;
+    transform: translateX(-50%);
+    z-index: -1;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: -1;
+  
 }
  header.hero{
         
@@ -259,7 +263,7 @@ section.top-products{
     font-family: "Raleway-bold";
     text-align:center;
     position:relative;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 .section-heading::after{
     content: '';
@@ -375,4 +379,58 @@ section.top-products .food-slider .food-card button:hover{
 }
 .slick-track{
     padding: 1rem 0;
+}
+section.about-meal img{
+    width:85%;
+}
+.flex-1{
+    flex:1;
+}
+section.about-meal h2{
+    font-family: "Raleway-bold";
+    font-size: 1.4rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    line-height: 1.3rem;
+}
+section.about-meal p{
+    line-height: 1.7rem;
+    margin-bottom: 4rem;
+
+}
+section.our-services{
+    background-color: var(--light);
+    position: relative;
+    z-index: 0;
+}
+section.our-services .card-wrap .service-card{
+    background-color: var(--heaven);
+    text-align: center;
+    padding: 2rem;
+    margin-right: 2rem;
+    padding-top: 4rem;
+    position: relative;
+    border-radius: 4px;
+}
+section.our-services .card-wrap .service-card .icons{
+    position: absolute;
+    top: -40;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.our-services .card-wrap .service-card h2{
+    font-family: "Raleway-bold";
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+section.our-services .card-wrap .service-card p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+section.our-services .card-wrap{
+    margin-right: -2rem;
+    margin-top: 8rem;
+}
+.text-primary{
+    color: var(--primary);
 }
